@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centang Keren</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #ff00ff, #00ffff, #ffcc00, #ff3300);
+            background-size: 400% 400%;
+            animation: rotateBG 8s linear infinite;
+        }
+
+        /* Animasi background berputar */
+        @keyframes rotateBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .check-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Lingkaran centang */
+        .circle {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            border-radius: 50%;
+            box-shadow: 0 0 20px #2ecc71;
+            animation: pulse 1.5s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Centang keren */
+        .checkmark {
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            border: 10px solid white;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg) scale(0);
+            filter: drop-shadow(0 0 10px white);
+            animation: checkAppear 0.6s ease-out 1s forwards;
+        }
+
+        /* Percikan */
+        .sparkle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkle 1s ease-out infinite;
+        }
+
+        /* Posisi percikan */
+        .sparkle:nth-child(1) { animation-delay: 0s; top: -30px; left: 50%; }
+        .sparkle:nth-child(2) { animation-delay: 0.2s; top: 50%; left: -30px; }
+        .sparkle:nth-child(3) { animation-delay: 0.4s; top: 170px; left: 50%; }
+        .sparkle:nth-child(4) { animation-delay: 0.6s; top: 50%; left: 170px; }
+        .sparkle:nth-child(5) { animation-delay: 0.1s; top: 20px; left: 120px; }
+        .sparkle:nth-child(6) { animation-delay: 0.3s; top: 120px; left: 20px; }
+
+        /* Efek kembang api */
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-radius: 50%;
+            opacity: 0;
+            animation: firework 1.2s ease-out infinite;
+        }
+
+        .firework:nth-child(1) { animation-delay: 0.2s; top: -50px; left: 50px; }
+        .firework:nth-child(2) { animation-delay: 0.4s; top: 50px; left: -50px; }
+        .firework:nth-child(3) { animation-delay: 0.6s; top: 170px; left: 50px; }
+        .firework:nth-child(4) { animation-delay: 0.8s; top: 50px; left: 170px; }
+
+        .text {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1.5s forwards;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Animasi */
+        @keyframes checkAppear {
+            0% { transform: scale(0) rotate(45deg); }
+            70% { transform: scale(1.2) rotate(45deg); }
+            100% { transform: scale(1) rotate(45deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+
+        @keyframes firework {
+            0% { transform: scale(0); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 1; background-color: orange; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="check-container">
+        <div class="circle"></div>
+        <div class="checkmark"></div>
+        <!-- Banyak percikan -->
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <!-- Kembang api -->
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+    <div class="text"><a href="toko3.html">Selesai</div>
+</body>
+</html>

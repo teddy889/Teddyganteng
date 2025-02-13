@@ -1,0 +1,159 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1E3A8A, #065F46);
+}
+
+/* Background Animation */
+.background-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 50%);
+    background-size: 200% 200%;
+    animation: bgMove 8s infinite linear alternate;
+    z-index: -1;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Link Button Styling */
+.nav-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Main Buttons */
+.main-button {
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Variasi Warna Tombol */
+.btn-1 { background: linear-gradient(45deg, #3B82F6, #2563EB); } /* Biru */
+.btn-2 { background: linear-gradient(45deg, #22C55E, #16A34A); } /* Hijau */
+.btn-3 { background: linear-gradient(45deg, #FACC15, #EAB308); } /* Kuning */
+.btn-4 { background: linear-gradient(45deg, #F97316, #EA580C); } /* Oranye */
+
+/* Hover Effect */
+.main-button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Button Ripple Effect */
+.main-button::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main-button:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Animasi Gelombang di Tombol */
+.main-button::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -100%;
+    left: -100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 50%);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.main-button:hover::after {
+    opacity: 1;
+    top: 0;
+    left: 0;
+}

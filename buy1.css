@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9f5e9;
+    color: #333;
+}
+
+.checkout-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: #4caf50;
+    border-radius: 10px 10px 0 0;
+}
+
+.address-section, 
+.product-section, 
+.shipping-section, 
+.total-section, 
+.voucher-section, 
+.payment-section, 
+footer {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c662d;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h4 {
+    font-size: 14px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+}
+
+.new-price {
+    color: #2e7d32;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shipping-option {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.shipping-title {
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.shipping-guarantee {
+    font-size: 12px;
+    color: #777;
+}
+
+.voucher-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #66bb6a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voucher-button:hover {
+    background-color: #4caf50;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+    text-align: right;
+}
+
+.order-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #388e3c;
+}
+
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
