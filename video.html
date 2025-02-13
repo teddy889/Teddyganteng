@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        video { display: block; margin: 20px auto; }
+        .controls { margin-top: 10px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Cry - Cigarettes After Sex</h2>
+
+    <video id="video" width="640" height="360" controls>
+        <source src="Cry - Cigarettes After Sex.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <div class="controls">
+        <button onclick="togglePlay()">Play/Pause</button>
+        <button onclick="seek(-10)"><< 10s</button>
+        <button onclick="seek(10)">10s >></button>
+        <button onclick="changeVolume(-0.1)">🔉 Volume -</button>
+        <button onclick="changeVolume(0.1)">🔊 Volume +</button>
+    </div>
+
+    <br>
+<a href="index.html" style="
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: white; 
+    background-color: #007BFF; 
+    border-radius: 5px;
+    transition: 0.3s;">
+    Back
+</a>
+
+    <script>
+        const video = document.getElementById("video");
+
+        function togglePlay() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function seek(seconds) {
+            if (!isNaN(video.duration)) {  
+                video.currentTime = Math.min(Math.max(video.currentTime + seconds, 0), video.duration);
+            }
+        }
+
+        function changeVolume(amount) {
+            video.volume = Math.min(Math.max(video.volume + amount, 0), 1);
+        }
+    </script>
+
+</body>
+</html>

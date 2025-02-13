@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
     <link rel="stylesheet" href="biodata.css">
-</head>
-<body>
-    <div class="navbar">
-        <a href="portofolio.html">Home</a>
-        <a href="biodata1.html">Biodata Diri</a>
-        <a href="buttonkarya.html">Hasil Karya</a>
-        <a href="infokontak1.html">Info Kontak</a>
-    </div>
-    
-    <title>Navigation Buttons</title>
     <style>
         body {
             background-color: #222;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
         .container {
-            position: relative;
             width: 97%;
             display: flex;
             align-items: center;
@@ -39,7 +41,6 @@
             border: 2px solid white;
             border-radius: 10px;
             text-decoration: none;
-            display: inline-block;
             transition: 0.3s;
         }
         .btn:hover {
@@ -48,32 +49,62 @@
         }
         .left, .right {
             position: absolute;
-            top: -7%;
+            top: 15%;
             transform: translateY(-50%);
         }
         .left {
-            left: 5px;
+            left: 20px;
         }
         .right {
-            right: 5px;
+            right: 20px;
+        }
+        .biodata-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            width: 300px;
+            text-align: left;
+        }
+        .card h2 {
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .card p {
+            font-size: 18px;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <a href="portofolio.html" class="btn left">Back</a>
-        <a href="buttonkarya.html" class="btn right">Next</a>
+    <div class="navbar">
+        <a href="menu.html">Home</a>
+        <a href="biodata1.html">Biodata Diri</a>
+        <a href="index.html">Hasil Karya</a>
+        <a href="infokontak1.html">Info Kontak</a>
     </div>
 
-     </div>
-  <div class="biodata-container">
-     <section id="kontak">
-        <h2>Info Kontak</h2>
-        <p>Email: Teddy@gmail.com</p>
-        <p>Telepon: 0858-2877-5098</p>
-        <p>Alamat: Jalan Raya Sungai Enau,Desa Kaliau</p>
-    </section>
-     </div>
+    <div class="container">
+        <a href="index.html" class="btn left">Back</a>
+        <a href="infokontak1.html" class="btn right">Next</a>
+    </div>
+
+    <div class="biodata-container">
+        <div class="card">
+            <h2>Info Kontak</h2>
+            <p><strong>Email:</strong> Teddy@gmail.com</p>
+            <p><strong>Telepon:</strong> 0858-2877-5098</p>
+            <p><strong>Alamat:</strong> Jalan Raya Sungai Enau, Desa Kaliau</p>
+        </div>
+    </div>
+
 </body>
 </html>
