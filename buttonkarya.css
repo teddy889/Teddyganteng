@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, #1E3A8A, #065F46);
+    background: linear-gradient(135deg, #121212, #2C2C2C);
 }
 
 /* Background Animation */
@@ -19,7 +19,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 10%, transparent 50%);
     background-size: 200% 200%;
     animation: bgMove 8s infinite linear alternate;
     z-index: -1;
@@ -35,7 +35,7 @@ body {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
     padding: 25px;
     border-radius: 20px;
     backdrop-filter: blur(12px);
@@ -60,9 +60,9 @@ body {
 /* Link Button Styling */
 .nav-button {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid white;
-    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    color: #fff;
     text-decoration: none;
     padding: 12px 22px;
     font-size: 16px;
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-button:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
 }
 
@@ -109,15 +109,15 @@ body {
 }
 
 /* Variasi Warna Tombol */
-.btn-1 { background: linear-gradient(45deg, #3B82F6, #2563EB); } /* Biru */
-.btn-2 { background: linear-gradient(45deg, #22C55E, #16A34A); } /* Hijau */
-.btn-3 { background: linear-gradient(45deg, #FACC15, #EAB308); } /* Kuning */
-.btn-4 { background: linear-gradient(45deg, #F97316, #EA580C); } /* Oranye */
+.btn-1 { background: linear-gradient(45deg, #444, #222); } /* Abu-abu gelap */
+.btn-2 { background: linear-gradient(45deg, #555, #333); } /* Abu-abu medium */
+.btn-3 { background: linear-gradient(45deg, #666, #444); } /* Abu-abu terang */
+.btn-4 { background: linear-gradient(45deg, #777, #555); } /* Abu-abu lebih terang */
 
 /* Hover Effect */
 .main-button:hover {
     transform: scale(1.07);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Button Ripple Effect */
@@ -126,7 +126,7 @@ body {
     position: absolute;
     width: 300%;
     height: 300%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 50%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -147,7 +147,7 @@ body {
     height: 200%;
     top: -100%;
     left: -100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 50%);
     opacity: 0;
     transition: 0.4s ease-in-out;
 }

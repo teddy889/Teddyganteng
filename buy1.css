@@ -6,24 +6,24 @@
 }
 
 body {
-    background-color: #e9f5e9;
-    color: #333;
+    background-color: #2f4f4f; /* Dark Slate Gray */
+    color: #f0f0f0; /* Light text for contrast */
 }
 
 .checkout-container {
     max-width: 400px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #2f4f4f; /* Dark Slate Gray */
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header {
     text-align: center;
     padding: 10px 0;
     color: white;
-    background-color: #4caf50;
+    background-color: #2f4f4f; /* Dark Slate Gray */
     border-radius: 10px 10px 0 0;
 }
 
@@ -35,18 +35,18 @@ header {
 .payment-section, 
 footer {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555; /* Darker separator */
 }
 
 h3 {
     font-size: 16px;
     font-weight: bold;
-    color: #2c662d;
+    color: #a9a9a9; /* Light gray for headers */
 }
 
 p {
     font-size: 14px;
-    color: #555;
+    color: #ccc; /* Lighter text for readability */
 }
 
 .product {
@@ -67,13 +67,13 @@ p {
 
 .product-info h4 {
     font-size: 14px;
-    color: #333;
+    color: #f0f0f0; /* Light text for product info */
 }
 
 .price {
     font-size: 16px;
     font-weight: bold;
-    color: #388e3c;
+    color: #66c7a3; /* Light green for price */
 }
 
 .old-price {
@@ -83,25 +83,25 @@ p {
 }
 
 .new-price {
-    color: #2e7d32;
+    color: #3a6d3f; /* Darker green for new price */
     font-size: 16px;
     font-weight: bold;
 }
 
 .shipping-option {
-    background-color: #e8f5e9;
+    background-color: #3b6c5a; /* Darker greenish background */
     padding: 10px;
     border-radius: 5px;
 }
 
 .shipping-title {
     font-weight: bold;
-    color: #388e3c;
+    color: #66c7a3; /* Light green for shipping title */
 }
 
 .shipping-guarantee {
     font-size: 12px;
-    color: #777;
+    color: #888; /* Slightly lighter gray for guarantee text */
 }
 
 .voucher-button {
@@ -121,7 +121,7 @@ p {
 .total-price {
     font-size: 18px;
     font-weight: bold;
-    color: #2e7d32;
+    color: #66c7a3; /* Light green for total price */
     text-align: right;
 }
 
@@ -145,6 +145,6 @@ p {
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-    color: #2e7d32;
+    color: #66c7a3; /* Light green for total amount */
     margin-bottom: 10px;
 }
